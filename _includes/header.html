@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<!--
+	Электронный образовательный ресурс по разделу Механика: Законы Кеплера по дисциплине Физика и Астрономия
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Электронный образовательный ресурс по разделу Механика: Законы Кеплера по дисциплине Физика и Астрономия</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="{{ site.baseurl }}/assets/css/ie/html5shiv.js"></script><![endif]-->
+		<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+		<script src="{{ site.baseurl }}/assets/js/jquery.dropotron.min.js"></script>
+		<script src="{{ site.baseurl }}/assets/js/skel.min.js"></script>
+		<script src="{{ site.baseurl }}/assets/js/skel-layers.min.js"></script>
+		<script src="{{ site.baseurl }}/assets/js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/skel.css" />
+			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
+			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style-wide.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<div id="header">
+						
+				<!-- Logo -->
+					<h1><a href="{{ site.baseurl }}/index.html" id="logo"><em>Электронный образовательный ресурс по разделу Механика: Законы Кеплера по дисциплине Астрономия и Физика</em></a></h1>
+				
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							{% assign current = page.url | downcase | split: '/' %}
+							<li {% if current[1] == 'index.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/index.html">Главная</a></li>
+							<li>
+								<a href="">Теоритическая часть</a>
+								<ul>
+									<li><a href="/1T-Sky_Mech">Небесная Механика
+									</a></li>
+									<li><a href="#">Историческая справка
+									</a>
+									<ul>
+											<li><a href="/1T-History_T_Brahe">Т. Браге</a></li>
+											<li><a href="/1T-History_J_Kepler">И. Кеплер</a></li>
+												<ul>
+												<li><a href="/1T-Timeline_Work_J_Kepler">ТАЙМЛАЙН: Научные труды И. Кеплера</a>
+												</ul>
+											<li><a href="/1T-History_J_Newton">И. Ньютон</a></li>
+										</ul>
+									<li>
+										<a href="">Законы Кеплера</a>
+										<ul>
+											<li><a href="/1T-Kepler_firstlaw">Первый Закон Кеплера</a></li>
+											<li><a href="/1T-Kepler_secondlaw">Второй Закон Кеплера</a></li>
+											<li><a href="/1T-Kepler_thirdlaw">Третий Закон Кеплера</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Основные формулы и единицы измерения</a></li>
+									<li><a href="#">Примеры решения основных задач
+									</a></li>
+									<li><a href="/1T-Slovar">Словарь
+									</a></li>
+								</ul>
+							</li>
+							<li {% if current[1] == 'blog' %}class="current"{% endif %}><a href="#">Практическая часть</a>
+							<ul>
+								<li><a href="/2P_Practic_zadachiastro">Задачи по Астрономии</a></li>
+								<li><a href="/2P_Practic_test">Тесты</a></li>
+								<li><a href="/2P_Practic_3">Интерактивные приложения LearningApps</a>
+								<ul>
+								<li><a href="/2P_Practic_1k">1 Интерактивное приложение</a></li>
+								<li><a href="/2P_Practic_2k">2 Интерактивное приложение</a></li>
+								<li><a href="/2P_Practic_3k">3 Интерактивное приложение</a></li>
+							</ul>
+							</ul>
+							<li {% if current[1] == 'blog' %}class="current"{% endif %}><a href="#">3D симуляторы</a>
+							<ul>
+								<li><a href="/3D_model_1">3D модель "Солнечная система"</a></li>
+								<li><a href="/3D_model_2">3D модель "Орбиты Кеплера"</a></li>
+								<li><a href="/3D_model_3">3D модель "Законы Кеплера"</a></li>
+							</ul>
+							<li {% if current[1] == 'blog' %}class="current"{% endif %}><a href="/about_project_1"">О проекте</a>
+							<li {% if current[1] == 'blog' %}class="current"{% endif %}><a href="/Contacts"">Контакты</a>
+						</ul>
+					</nav>
+
+			</div>
