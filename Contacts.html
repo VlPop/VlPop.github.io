@@ -22,36 +22,11 @@ layout: default
 	
 </head>
 <body>
-<form class="contact_form" action="#" method="post" name="contact_form">
-    <ul>
-        <li>
-             <h2>Contact Us</h2>
-             <span class="required_notification">*Поле для заполнения</span>
-        </li>
-        <li>
-            <label for="name">Имя:</label>
-            <input type="text"  placeholder="Ваше Имя / Your Name" required />
-        </li>
-        <li>
-            <label for="email">Email:</label>
-            <input type="email" name="email" placeholder="your_name@example.com" required />
-            <span class="form_hint">Proper format "name@something.com"</span>
-        </li>
-        <li>
-            <label for="website">Website:</label>
-            <input type="url" name="website" placeholder="http://yourname.com" required pattern="(http|https)://.+"/>
-            <span class="form_hint">Proper format "http://someaddress.com"</span>
-        </li>
-        <li>
-            <label for="message">Message:</label>
-            <textarea name="message" cols="40" rows="6" required ></textarea>
-        </li>
-        <li>
-        	<button class="submit" type="submit">Submit Form</button>
-        </li>
-    </ul>
+<form method="POST" action="https://formspree.io/YOUREMAILHERE">
+  <input type="email" name="email" placeholder="Your email">
+  <textarea name="message" placeholder="Test Message"></textarea>
+  <button type="submit">Send Test</button>
 </form>
-	<span class="image featured"><img src="{{ site.baseurl }}/assets/images/c_img.png" alt="" /></span>
 </body>
 </html>
 					</article>
