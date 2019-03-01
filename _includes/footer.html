@@ -31,27 +31,16 @@
 						<section class="6u">
 							<h3>Обратная связь</h3>
 							<form>
-								<div class="row half collapse-at-2">
-									<div class="6u">
-										<input type="Текст" name="Имя" id="Имя" placeholder="Имя" />
-									</div>
-									<div class="6u">
-										<input type="email" name="email" id="email" placeholder="Email" />
-									</div>
-								</div>
-								<div class="row half">
-									<div class="12u">
-										<textarea name="Сообщение" id="Сообщение" placeholder="Сообщение" rows="5"></textarea>
-									</div>
-								</div>
-								<div class="row half">
-									<div class="12u">
-										<ul class="actions">
-											<li><input type="submit" class="button alt" value="Отправить сообщение" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
+								  <form method="post" action="//formspree.io/pov.post.2014@ya.ru">
+        <input type="hidden" name="_next" value="/thanks" />
+        <input type="hidden" name="_subject" value="Сообщение с моего сайта" />
+        <input type="text" name="_gotcha" style="display:none" />        
+        <p><input type="text" name="Имя" required placeholder="Имя" /></p>
+        <p><input type="email" name="email" required placeholder="Email" /></p>
+        <p><textarea name="Сообщение" required placeholder="Ваше сообщение" rows="7"></textarea></p>
+        <input type="submit" value="Отправить" />
+    </form>
+							
 						</section>
 					</div>
 				</div>
