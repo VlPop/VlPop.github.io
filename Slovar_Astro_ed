@@ -1,0 +1,25 @@
+---
+title: Arcana
+layout: default
+---
+			
+<!-- Main -->
+	<section class="wrapper style1">
+		<div class="container">
+			<div id="content">
+
+				<!-- Content -->
+			
+					<article>
+						<header>
+							<p>Астрономи́ческая едини́ца</p>
+						</header>
+						
+						<span class="image featured"><img src="{{ site.baseurl }}/assets/images/banner.jpg" alt="" /></span>
+						<p>Астрономи́ческая едини́ца (рус. обозн.- а.е.; международное: с 2012 года — au; ранее исп. обозначение - ua) —   единица измерения расстояния в астрономии. Исходно принималась равной большой полуоси орбиты Земли, которая в астрономии считается средним расстоянием от Земли до Солнца.</p>
+					
+					</article>
+		
+			</div>
+		</div>
+	</section>			
