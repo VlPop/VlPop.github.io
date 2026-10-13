@@ -15,16 +15,70 @@ layout: default
 					<p>Великий датский астроном, заложивший фундамент небесной механики</p>
 				</header>
 
-				<!-- Локальное фото из твоей папки ассетов -->
-				<div style="text-align: center; margin: 25px 0;">
+				<!-- Блок с увеличенной фотографией, смещенной вправо -->
+				<div style="float: right; margin: 0 0 20px 25px; width: 280px; text-align: center; max-width: 100%;">
 					<span style="display: inline-block; border: 1px solid #ddd; padding: 8px; background: #fff; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-						<img src="{{ site.baseurl }}/assets/images/Tiho-Brage.jpg" alt="Тихо Браге" style="max-width: 250px; width: 100%; height: auto; display: block;" />
+						<img src="{{ site.baseurl }}/assets/images/Tiho-Brage.jpg" alt="Тихо Браге" style="width: 100%; height: auto; display: block;" />
 					</span>
 					<p style="font-size: 0.85em; color: #777; font-style: italic; margin-top: 8px;">Портрет Тихо Браге (1546—1601 гг.)</p>
 				</div>
 
-				<!-- Полный текст статьи доступен в исходных материалах, включая биографию, таймлайн вех и гео-гелиоцентрическую систему мира. -->
-				<p>Полный текст статьи о Тихо Браге, включая разделы биографии, ключевые вехи открытий и описание системы мира, вы можете найти и использовать в структуре вашего Jekyll-файла.</p>
+				<!-- Вводная карточка-цитата -->
+				<div style="background: #fafafa; border-left: 4px solid #47cf73; padding: 20px; margin-bottom: 30px; border-radius: 4px;">
+					<p style="font-size: 1.1em; line-height: 1.6; color: #333; margin-bottom: 0;">
+						<strong>Ти́хо Бра́ге</strong> (14 декабря 1546 — 24 октября 1601) — датский астроном, астролог и алхимик эпохи Возрождения. Пионер систематических и высокоточных наблюдений, чьи данные позволили Кеплеру вывести законы движения планет.
+					</p>
+				</div>
+
+				<!-- Интерактивное содержание -->
+				<div style="background: #fcfcfc; border: 1px solid #e0e0e0; padding: 20px; margin-bottom: 40px; border-radius: 4px; max-width: 400px;">
+					<h4 style="margin-top: 0; margin-bottom: 10px; color: #555;"><i class="fa fa-list-ul"></i> Содержание статьи</h4>
+					<ul style="list-style: none; padding-left: 0; margin-bottom: 0; line-height: 1.8;">
+						<li><a href="#biography" style="border-bottom: none;"><i class="fa fa-angle-right"></i> 1. Биография и ранние годы</a></li>
+						<li><a href="#timeline" style="border-bottom: none;"><i class="fa fa-angle-right"></i> 2. Ключевые вехи и открытия</a></li>
+						<li><a href="#system" style="border-bottom: none;"><i class="fa fa-angle-right"></i> 3. Гео-гелиоцентрическая система мира</a></li>
+					</ul>
+				</div>
+
+				<div style="clear: both;"></div>
+
+				<!-- РАЗДЕЛ 1 -->
+				<h3 id="biography" style="color: #2c3e50; border-bottom: 2px solid #ddd; padding-bottom: 8px; margin-top: 40px;">
+					<i class="fa fa-user" style="color: #47cf73;"></i> 1. Биография и ранние годы
+				</h3>
+				<p>
+					Происходил из знатного рода, воспитывался в семье дяди-адмирала Йергена Браге, получив блестящее образование. Увлёкся астрономией после солнечного затмения 1560 года в Копенгагене, проводя ночи за наблюдениями и созданием инструментов.
+				</p>
+
+				<!-- РАЗДЕЛ 2: ИНТЕРАКТИВНЫЙ ТАЙМЛАЙН -->
+				<h3 id="timeline" style="color: #2c3e50; border-bottom: 2px solid #ddd; padding-bottom: 8px; margin-top: 40px;">
+					<i class="fa fa-calendar" style="color: #47cf73;"></i> 2. Ключевые вехи и открытия
+				</h3>
+				<div style="position: relative; border-left: 2px solid #47cf73; margin: 20px 0 30px 15px; padding-left: 20px;">
+					<div style="margin-bottom: 25px; position: relative;">
+						<div style="position: absolute; left: -26px; top: 2px; background: #47cf73; width: 10px; height: 10px; border-radius: 50%;"></div>
+						<span style="font-weight: bold; color: #47cf73; font-size: 1.1em;">1572 год — Сверхновая звезда</span>
+						<p style="margin-top: 5px; color: #555;">Открытие вспышки в Кассиопее, опровергшее догмат о неизменности небес.</p>
+					</div>
+					<div style="margin-bottom: 25px; position: relative;">
+						<div style="position: absolute; left: -26px; top: 2px; background: #47cf73; width: 10px; height: 10px; border-radius: 50%;"></div>
+						<span style="font-weight: bold; color: #47cf73; font-size: 1.1em;">1576–1597 гг. — Обсерватория Ураниборг</span>
+						<p style="margin-top: 5px; color: #555;">Строительство передового комплекса на острове Вен для точных измерений.</p>
+					</div>
+					<div style="margin-bottom: 0; position: relative;">
+						<div style="position: absolute; left: -26px; top: 2px; background: #47cf73; width: 10px; height: 10px; border-radius: 50%;"></div>
+						<span style="font-weight: bold; color: #47cf73; font-size: 1.1em;">1599 год — Переезд в Прагу</span>
+						<p style="margin-top: 5px; color: #555;">Статус придворного астронома и сотрудничество с Иоганном Кеплером.</p>
+					</div>
+				</div>
+
+				<!-- РАЗДЕЛ 3 -->
+				<h3 id="system" style="color: #2c3e50; border-bottom: 2px solid #ddd; padding-bottom: 8px; margin-top: 40px;">
+					<i class="fa fa-globe" style="color: #47cf73;"></i> 3. Гео-гелиоцентрическая система мира
+				</h3>
+				<p>
+					Компромиссная модель Тихо Браге предполагала неподвижность Земли в центре с вращением вокруг неё Солнца и Луны, в то время как остальные планеты обращались вокруг Солнца. Эта система стала переходным этапом к гелиоцентризму Кеплера.
+				</p>
 
 			</article>
 		</div>
