@@ -3,13 +3,32 @@ title: Arcana
 layout: default
 ---
 
+<!-- Встроенные стили для анимации карточек -->
+<style>
+	.kepler-card {
+		flex: 1; 
+		min-width: 250px; 
+		background: #fafafa; 
+		border-left: 4px solid #34a853; 
+		padding: 15px; 
+		border-radius: 4px;
+		transition: all 0.3s ease;
+		box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+	}
+	.kepler-card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 8px 15px rgba(0,0,0,0.08);
+		background: #ffffff;
+	}
+</style>
+
 <!-- Main -->
 <section class="wrapper style1">
 	<div class="container">
 		<div id="content">
 
 			<!-- Content -->
-			<article>
+			<article style="max-width: 900px; margin: 0 auto;">
 				<header>
 					<h2>Второй закон Кеплера</h2>
 					<p>Фундаментальный закон небесной механики — Закон площадей</p>
@@ -27,7 +46,7 @@ layout: default
 				<div style="background: #f7f9fa; border-left: 4px solid #47cf73; padding: 25px; margin-bottom: 30px; border-radius: 4px;">
 					<p style="font-size: 1.2em; line-height: 1.7; color: #2c3e50; margin-bottom: 0;">
 						<i class="fa fa-university" style="color: #47cf73; margin-right: 10px;"></i>
-						<strong>Формулировка:</strong> Каждая планета движется в плоскости, проходящей через中心 Солнца, причём за равные промежутки времени радиус-вектор, соединяющий Солнце и планету, описывает равные площади.
+						<strong>Формулировка:</strong> Каждая планета движется в плоскости, проходящей через центр Солнца, причём за равные промежутки времени радиус-вектор, соединяющий Солнце и планету, описывает равные площади.
 					</p>
 				</div>
 
@@ -47,12 +66,13 @@ layout: default
 					Главное физическое следствие Второго закона заключается в том, что <strong>орбитальная скорость планеты не является постоянной</strong>. Чтобы радиус-вектор успевал заметать одинаковую площадь за одинаковое время, планета вынуждена проходить разное расстояние по дуге орбиты.
 				</p>
 
+				<!-- Блоки скоростей с подключенным классом kepler-card и измененной рамкой для минимальной скорости -->
 				<div style="display: flex; gap: 20px; flex-wrap: wrap; margin: 25px 0;">
-					<div style="flex: 1; min-width: 250px; background: #fafafa; border-left: 4px solid #34a853; padding: 15px; border-radius: 4px;">
+					<div class="kepler-card">
 						<h5 style="margin-top: 0; color: #2c3e50;"><i class="fa fa-bolt"></i> Максимальная скорость</h5>
 						<p style="font-size: 0.95em; margin-bottom: 0; color: #555;">Достигается в <strong>перигелии</strong> (ближайшей к Солнцу точке). Здесь радиус-вектор самый короткий, и планета летит быстрее всего: <i>v</i><sub>max</sub>.</p>
 					</div>
-					<div style="flex: 1; min-width: 250px; background: #fafafa; border-left: 4px solid #e74c3c; padding: 15px; border-radius: 4px;">
+					<div class="kepler-card" style="border-left-color: #e74c3c;">
 						<h5 style="margin-top: 0; color: #2c3e50;"><i class="fa fa-hourglass-end"></i> Минимальная скорость</h5>
 						<p style="font-size: 0.95em; margin-bottom: 0; color: #555;">Достигается в <strong>афелии</strong> (самой удалённой точке). Радиус-вектор максимально вытянут, и планета замедляется: <i>v</i><sub>min</sub>.</p>
 					</div>
