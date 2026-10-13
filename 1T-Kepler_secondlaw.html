@@ -3,13 +3,32 @@ title: Arcana
 layout: default
 ---
 
+<!-- Встроенные стили для анимации карточек -->
+<style>
+	.kepler-card {
+		flex: 1; 
+		min-width: 250px; 
+		background: #fafafa; 
+		border-left: 4px solid #34a853; 
+		padding: 20px; 
+		border-radius: 4px;
+		transition: all 0.3s ease;
+		box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+	}
+	.kepler-card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 8px 15px rgba(0,0,0,0.08);
+		background: #ffffff;
+	}
+</style>
+
 <!-- Main -->
 <section class="wrapper style1">
 	<div class="container">
 		<div id="content">
 
 			<!-- Content -->
-			<article>
+			<article style="max-width: 900px; margin: 0 auto;">
 				<header>
 					<h2>Второй закон Кеплера</h2>
 					<p>Фундаментальный закон небесной механики — Закон площадей</p>
@@ -23,44 +42,13 @@ layout: default
 					<p style="font-size: 0.85em; color: #777; font-style: italic; margin-top: 10px;">За равные промежутки времени радиус-вектор планеты описывает равные площади: <i>S</i><sub>1</sub> = <i>S</i><sub>2</sub></p>
 				</div>
 
-            	 <!-- Главная формулировка закона -->
-				<div style="background: #f7f9fa; border-left: 4px solid #47cf73; padding: 25px; margin-bottom: 30px; border-radius: 4px;">
-				<p style="font-size: 1.2em; line-height: 1.7; color: #2c3e50; margin-bottom: 0;">
-				<i class="fa fa-university" style="color: #47cf73; margin-right: 10px;"></i>
-				<strong>Формулировка:</strong> Каждая планета движется в плоскости, проходящей через центр Солнца, причём за равные промежутки времени радиус-вектор, соединяющий Солнце и планету, описывает равные площади.
+				<!-- Главная формулировка закона -->
+				<div style="background: #f7f9fa; border-left: 4px solid #47cf73; padding: 25px; margin-bottom: 30px; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+					<p style="font-size: 1.2em; line-height: 1.7; color: #2c3e50; margin-bottom: 0;">
+						<i class="fa fa-university" style="color: #47cf73; margin-right: 10px;"></i>
+						<strong>Формулировка:</strong> Каждая планета движется в плоскости, проходящей через центр Солнца, причём за равные промежутки времени радиус-вектор, соединяющий Солнце и планету, описывает равные площади.
 					</p>
 				</div>
-
-				<!-- Основные понятия -->
-				<h3 style="color: #2c3e50; border-bottom: 2px solid #ddd; padding-bottom: 8px; margin-top: 40px;">
-					<i class="fa fa-location-arrow" style="color: #47cf73;"></i> Понятие радиус-вектора
-				</h3>
-				<p>
-					<strong>Радиус-вектор</strong> — это воображаемый отрезок, соединяющий фокус орбиты (центр Солнца) и геометрический центр планеты в любой точке её движения. По мере движения планеты по эллипсу длина этого немудрёного вектора непрерывно меняется.
-				</p>
-
-				<!-- Физическое следствие -->
-				<h3 style="color: #2c3e50; border-bottom: 2px solid #ddd; padding-bottom: 8px; margin-top: 40px;">
-					<i class="fa fa-dashboard" style="color: #47cf73;"></i> Изменение скорости движения планет
-				</h3>
-				<p>
-					Главное физическое следствие Второго закона заключается в том, что <strong>орбитальная скорость планеты не является постоянной</strong>. Чтобы радиус-вектор успевал заметать одинаковую площадь за одинаковое время, планета вынуждена проходить разное расстояние по дуге орбиты.
-				</p>
-
-				<div style="display: flex; gap: 20px; flex-wrap: wrap; margin: 25px 0;">
-					<div style="flex: 1; min-width: 250px; background: #fafafa; border-left: 4px solid #34a853; padding: 15px; border-radius: 4px;">
-						<h5 style="margin-top: 0; color: #2c3e50;"><i class="fa fa-bolt"></i> Максимальная скорость</h5>
-						<p style="font-size: 0.95em; margin-bottom: 0; color: #555;">Достигается в <strong>перигелии</strong> (ближайшей к Солнцу точке). Здесь радиус-вектор самый короткий, и планета летит быстрее всего: <i>v</i><sub>max</sub>.</p>
-					</div>
-					<div style="flex: 1; min-width: 250px; background: #fafafa; border-left: 4px solid #e74c3c; padding: 15px; border-radius: 4px;">
-						<h5 style="margin-top: 0; color: #2c3e50;"><i class="fa fa-hourglass-end"></i> Минимальная скорость</h5>
-						<p style="font-size: 0.95em; margin-bottom: 0; color: #555;">Достигается в <strong>афелии</strong> (самой удалённой точке). Радиус-вектор максимально вытянут, и планета замедляется: <i>v</i><sub>min</sub>.</p>
-					</div>
-				</div>
-
-				<p style="background: #fffdf5; border: 1px solid #f1c40f; padding: 15px; border-radius: 4px; font-style: italic; color: #444;">
-					<strong>Простая аналогия:</strong> Чем ближе планета подходит к перигелию, тем быстрее становится её движение — она словно стремится поскорее миновать опасную близость к палящему солнечному диску и уйти вглубь космоса.
-				</p>
 
 			</article>
 		</div>
