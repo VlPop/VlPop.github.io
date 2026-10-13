@@ -3,13 +3,32 @@ title: Arcana
 layout: default
 ---
 
+<!-- Встроенные стили для анимации карточек -->
+<style>
+	.kepler-card {
+		flex: 1; 
+		min-width: 250px; 
+		background: #fafafa; 
+		border-left: 4px solid #34a853; 
+		padding: 20px; 
+		border-radius: 4px;
+		transition: all 0.3s ease;
+		box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+	}
+	.kepler-card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 8px 15px rgba(0,0,0,0.08);
+		background: #ffffff;
+	}
+</style>
+
 <!-- Main -->
 <section class="wrapper style1">
 	<div class="container">
 		<div id="content">
 
 			<!-- Content -->
-			<article>
+			<article style="max-width: 1100px; margin: 0 auto;">
 				<header>
 					<h2>Первый закон Кеплера</h2>
 					<p>Фундаментальный закон небесной механики — Закон эллипсов</p>
@@ -17,10 +36,10 @@ layout: default
 
 				<!-- Блок с иллюстрацией орбиты, смещенной вправо -->
 				<div style="float: right; margin: 0 0 25px 30px; width: 360px; text-align: center; max-width: 100%;">
-				<span style="display: inline-block; border: 1px solid #ddd; padding: 10px; background: #fff; border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.08);">
-				<img src="{{ site.baseurl }}/assets/images/Kepler_first_law.jpg" alt="Первый закон Кеплера — Эллиптические орбиты" style="width: 100%; height: auto; display: block;" />
+					<span style="display: inline-block; border: 1px solid #ddd; padding: 10px; background: #fff; border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.08);">
+						<img src="{{ site.baseurl }}/assets/images/Kepler_first_law.jpg" alt="Первый закон Кеплера — Эллиптические орбиты" style="width: 100%; height: auto; display: block;" />
 					</span>
-				<p style="font-size: 0.85em; color: #777; font-style: italic; margin-top: 10px;">Геометрия эллиптической орбиты: Солнце в одном из фокусов (<i>F</i><sub>1</sub>), перигелий (<i>P</i>) и афелий (<i>A</i>)</p>
+					<p style="font-size: 0.85em; color: #777; font-style: italic; margin-top: 10px;">Геометрия эллиптической орбиты: Солнце в одном из фокусов (<i>F</i><sub>1</sub>), перигелий (<i>P</i>) и афелий (<i>A</i>)</p>
 				</div>
 
 				<!-- Главная формулировка закона -->
@@ -39,12 +58,13 @@ layout: default
 					Эллипс имеет два фокуса. Расстояние между самой удалённой и самой близкой точкой траектории к фокусу составляет <strong>большую ось</strong> эллипса. Половина её длины — <strong>большая полуось (<i>a</i>)</strong> — принимается в астрономии за среднее расстояние от планеты до центрального светила.
 				</p>
 
+				<!-- Анимированные карточки перигелия и афелия -->
 				<div style="display: flex; gap: 20px; flex-wrap: wrap; margin: 25px 0;">
-					<div style="flex: 1; min-width: 250px; background: #fafafa; border-left: 4px solid #34a853; padding: 15px; border-radius: 4px;">
+					<div class="kepler-card">
 						<h5 style="margin-top: 0; color: #2c3e50;"><i class="fa fa-arrow-down"></i> Перигелий</h5>
 						<p style="font-size: 0.95em; margin-bottom: 0; color: #555;">Ближайшая к Солнцу точка <i>P</i> траектории планеты. Для Земли это расстояние минимально в начале января.</p>
 					</div>
-					<div style="flex: 1; min-width: 250px; background: #fafafa; border-left: 4px solid #e74c3c; padding: 15px; border-radius: 4px;">
+					<div class="kepler-card" style="border-left-color: #e74c3c;">
 						<h5 style="margin-top: 0; color: #2c3e50;"><i class="fa fa-arrow-up"></i> Афелий</h5>
 						<p style="font-size: 0.95em; margin-bottom: 0; color: #555;">Самая удалённая от Солнца точка <i>A</i> траектории. Земля проходит эту точку в начале июля.</p>
 					</div>
@@ -74,7 +94,7 @@ layout: default
 				<div style="background: #fffdf5; border: 1px solid #f1c40f; padding: 20px; margin-top: 30px; border-radius: 4px;">
 					<h5 style="margin-top: 0; color: #b78a00;"><i class="fa fa-sliders"></i> Эксцентриситеты тел Солнечной системы:</h5>
 					<ul style="margin-bottom: 0; padding-left: 20px; line-height: 1.7; color: #444;">
-						<li><strong>Венера:</strong> Орбита практически круговая (<i>e</i> = 0,0068).</li>
+						<li><strong>Венера:</strong> Orbit практически круговая (<i>e</i> = 0,0068).</li>
 						<li><strong>Земля:</strong> Слабо вытянутый эллипс (<i>e</i> = 0,0167).</li>
 						<li><strong>Плутон (карликовая планета):</strong> Орбита обладает значительным сплющиванием и вытянутостью (<i>e</i> = 0,2488).</li>
 					</ul>
