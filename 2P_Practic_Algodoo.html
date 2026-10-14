@@ -2,29 +2,156 @@
 title: Arcana
 layout: default
 ---
-			
-<!-- Main -->
-	<section class="wrapper style1">
-		<div class="container">
-			<div id="content">
 
-				<!-- Content -->
-			
-					<article>
-						<header>
-							<h2>Интерактивные приложения Algodoo</h2>
-							<p align="justify">Интерактивные приложения Algodoo: описание и инструкции 
-							<p align="justify"> 1.  Зайти на сайт<p/>
-							<a href="/https://www.geogebra.org/download">www.algodoo.com/download</a></li>
-							<p align="justify"> 2.  Скачать бесплатный дистрибутив для Вашей операционной системы Windows или Mac OS <p/>
-							<p align="justify"> 3.  Установить дистрибутив<p/>
-							<p align="justify"> 4.  В меню программы выбрать загрузить сцену<p/>
-							<p align="justify"> 5.  Из представленных выбрать сцену под названием Орбита – Orbit (Данное действие работает при включенном доступе в сеть “Интеренет”)<p/>
-							<p align="justify"> 6.  Далее следовать методическим инструкциям или План работы преподавателя со сценой.<p/>
-						</header>
-						<span class="image featured"><img src="{{ site.baseurl }}/assets/images/banner.jpg" alt="" /></span>
-					</article>
-		
-			</div>
+<!-- Фирменные стили для оформления интерактивного руководства Algodoo -->
+<style>
+	.instruction-container {
+		background: #f8fafc;
+		border-left: 4px solid #0284c7;
+		padding: 20px;
+		margin-bottom: 35px;
+		border-radius: 4px;
+		box-shadow: 0 2px 4px rgba(0,0,0,0.01);
+	}
+	.step-list {
+		position: relative;
+		list-style: none;
+		padding-left: 0;
+		margin: 30px 0;
+	}
+	.step-item {
+		position: relative;
+		background: #ffffff;
+		border: 1px solid #e2e8f0;
+		border-left: 4px solid #47cf73;
+		padding: 20px;
+		margin-bottom: 20px;
+		border-radius: 4px;
+		box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+		transition: transform 0.2s ease, box-shadow 0.2s ease;
+		box-sizing: border-box;
+	}
+	.step-item:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+	}
+	.step-number {
+		display: inline-block;
+		background: #47cf73;
+		color: #ffffff;
+		width: 28px;
+		height: 28px;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 28px;
+		font-weight: bold;
+		margin-right: 12px;
+		font-size: 0.9em;
+	}
+	.download-btn {
+		display: inline-flex;
+		align-items: center;
+		gap: 10px;
+		background: #47cf73;
+		color: #ffffff !important;
+		font-weight: bold;
+		padding: 10px 20px;
+		border-radius: 4px;
+		text-decoration: none;
+		margin-top: 10px;
+		transition: background 0.2s ease;
+	}
+	.download-btn:hover {
+		background: #3bba64;
+	}
+	.method-box {
+		background: #fffdf5;
+		border: 1px solid #f1c40f;
+		border-left: 4px solid #f1c40f;
+		padding: 22px;
+		border-radius: 4px;
+		margin-top: 40px;
+		box-sizing: border-box;
+	}
+</style>
+
+<!-- Main -->
+<section class="wrapper style1">
+	<div class="container">
+		<div id="content">
+
+			<!-- Content -->
+			<article style="max-width: 1000px; margin: 0 auto;">
+				<header>
+					<h2>Интерактивные приложения Algodoo</h2>
+					<p>Использование физического симулятора для визуализации гравитационного взаимодействия орбит</p>
+				</header>
+
+				<!-- Вводный методический блок -->
+				<div class="instruction-container">
+					<p style="font-size: 1.1em; line-height: 1.6; color: #334155; margin-bottom: 0;">
+						<i class="fa fa-info-circle" style="color: #0284c7; margin-right: 8px;"></i>
+						<strong>О симуляторе:</strong> Интерактивная 2D-физическая среда <strong>Algodoo</strong> позволяет моделировать законы небесной механики на основе реальных физических параметров. Студенты могут экспериментальным путём изменять массу центральной звезды, задавать начальную скорость и эксцентриситет, наблюдая за динамическим изменением траектории космических тел.
+					</p>
+				</div>
+
+				<h3 style="color: #2c3e50; border-bottom: 2px solid #ddd; padding-bottom: 8px; margin-top: 40px;">
+					<i class="fa fa-download" style="color: #47cf73;"></i> Пошаговое руководство по установке и запуску сцены
+				</h3>
+
+				<!-- ПОШАГОВЫЙ ТАЙМЛАЙН ДЕЙСТВИЙ -->
+				<div class="step-list">
+					
+					<div class="step-item">
+						<p style="margin-bottom: 0; font-size: 1.05em; color: #1e293b;">
+							<span class="step-number">1</span> Перейдите на официальный сайт разработчиков физического симулятора по защищённому протоколу для доступа к актуальным дистрибутивам.
+						</p>
+						<a href="https://algodoo.com" target="_blank" class="download-btn">
+							<i class="fa fa-external-link"></i> Открыть раздел загрузок Algodoo (HTTPS)
+						</a>
+					</div>
+
+					<div class="step-item">
+						<p style="margin-bottom: 0; font-size: 1.05em; color: #1e293b;">
+							<span class="step-number">2</span> Скачайте официальный дистрибутив программы, выбрав версию, соответствующую архитектуре и типу Вашей операционной системы (<strong>Windows</strong> или актуальные версии <strong>macOS</strong>).
+						</p>
+					</div>
+
+					<div class="step-item">
+						<p style="margin-bottom: 0; font-size: 1.05em; color: #1e293b;">
+							<span class="step-number">3</span> Установите программное обеспечение на персональный компьютер или учебный терминал, следуя стандартным шагам мастера установки программной среды.
+						</p>
+					</div>
+
+					<div class="step-item">
+						<p style="margin-bottom: 0; font-size: 1.05em; color: #1e293b;">
+							<span class="step-number">4</span> Запустите симулятор и в главном пользовательском меню программы выберите команду <strong>«Загрузить сцену» (Load Scene)</strong>.
+						</p>
+					</div>
+
+					<div class="step-item">
+						<p style="margin-bottom: 0; font-size: 1.05em; color: #1e293b;">
+							<span class="step-number">5</span> В открывшемся глобальном онлайн-каталоге сообщества введите в поиск и выберите интерактивную астрономическую сцену под названием <strong>«Орбита — Orbit»</strong> <i>(внимание: данное действие требует активного подключения к сети Интернет)</i>.
+						</p>
+					</div>
+
+					<div class="step-item">
+						<p style="margin-bottom: 0; font-size: 1.05em; color: #1e293b;">
+							<span class="step-number">6</span> После успешного импорта и визуализации виртуального пространства следуйте прикладным методическим инструкциям ЭОР или утвержденному плану лабораторной работы.
+						</p>
+					</div>
+
+				</div>
+
+				<!-- МЕТОДИЧЕСКИЙ БЛОК ДЛЯ ПРЕПОДАВАТЕЛЯ -->
+				<div class="method-box">
+					<h4 style="margin-top: 0; color: #b78a00;"><i class="fa fa-graduation-cap"></i> План работы преподавателя со сценой</h4>
+					<p style="font-size: 0.95em; line-height: 1.6; color: #444; margin-bottom: 0;">
+						В рамках демонстрации физических явлений рекомендуется запустить предустановленную симуляцию «Orbit» и наглядно продемонстрировать учащимся выполнение Второго закона Кеплера (закона площадей) за счёт автоматического изменения линейной скорости моделируемого объекта при его приближении к гравитационному фокусу эллиптической траектории.
+					</p>
+				</div>
+
+			</article>
 		</div>
-	</section>			
+	</div>
+</section>
