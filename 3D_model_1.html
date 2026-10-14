@@ -68,9 +68,22 @@ layout: default
 					</p>
 				</div>
 
-				<!-- ИНТЕГРАЦИЯ АДАПТИВНОГО 3D-СИМУЛЯТОРА -->
+								<!-- ИНТЕГРАЦИЯ АДАПТИВНОГО 3D-СИМУЛЯТОРА С ЗАЩИТОЙ И КНОПКОЙ -->
 				<div class="simulator-wrapper">
-					<iframe src="https://codepen.io" allowfullscreen="true" loading="lazy"></iframe>
+					<iframe 
+						src="https://codepen.io" 
+						allow="accelerometer; gyroscope; payment; scale-generic; autoplay; encrypted-media; picture-in-picture" 
+						sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-same-origin allow-scripts"
+						allowfullscreen="true" 
+						loading="lazy">
+					</iframe>
+				</div>
+
+				<!-- Запасная кнопка-ссылка для дипломной комиссии (на случай жестких блокировок браузера) -->
+				<div style="text-align: center; margin: -15px 0 35px 0;">
+					<a href="https://codepen.io/juliangarnier/full/idhuG" target="_blank" class="button alt" style="border-color: #47cf73; color: #2c3e50; font-size: 0.9em; padding: 10px 20px; text-decoration: none; border-radius: 4px; display: inline-flex; align-items: center; gap: 8px;">
+						<i class="fa fa-external-link" style="color: #47cf73;"></i> Открыть 3D-симулятор в новой вкладке (CodePen)
+					</a>
 				</div>
 
 				<!-- Методические указания к модели -->
