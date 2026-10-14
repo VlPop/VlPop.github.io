@@ -2,59 +2,151 @@
 title: Arcana
 layout: default
 ---
-			
+
+<!-- Фирменные стили для интерактивной плиточной системы тестов -->
+<style>
+	.instruction-box {
+		background: #f8fafc;
+		border-left: 4px solid #0284c7;
+		padding: 20px;
+		margin-bottom: 30px;
+		border-radius: 4px;
+		box-shadow: 0 2px 4px rgba(0,0,0,0.01);
+	}
+	.test-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+		gap: 20px;
+		margin: 30px 0 40px 0;
+	}
+	.test-card {
+		background: #ffffff;
+		border: 1px solid #e2e8f0;
+		border-top: 4px solid #47cf73;
+		padding: 25px;
+		border-radius: 6px;
+		box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+		text-align: center;
+		transition: all 0.3s ease;
+		text-decoration: none !important;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100%;
+	}
+	.test-card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 12px 20px rgba(0,0,0,0.08);
+		border-color: #47cf73;
+	}
+	.test-card:nth-child(even) {
+		border-top-color: #34a853;
+	}
+	.test-card h4 {
+		color: #1e293b;
+		margin: 15px 0 10px 0;
+		font-size: 1.25em;
+		font-weight: bold;
+	}
+	.test-meta {
+		font-size: 0.9em;
+		color: #64748b;
+		margin-bottom: 20px;
+		line-height: 1.6;
+		text-align: left;
+	}
+	.test-btn {
+		display: block;
+		background: #f1f5f9;
+		color: #334155;
+		padding: 10px 16px;
+		border-radius: 4px;
+		font-size: 0.9em;
+		font-weight: bold;
+		transition: all 0.2s ease;
+	}
+	.test-card:hover .test-btn {
+		background: #47cf73;
+		color: #ffffff;
+	}
+</style>
+
 <!-- Main -->
-	<section class="wrapper style1">
-		<div class="container">
-			<div id="content">
+<section class="wrapper style1">
+	<div class="container">
+		<div id="content">
 
-				<!-- Content -->
-			
-					<article>
-						<header>
-<header>
-<p>Тесты по Астрономии</p>
-    <meta charset="utf-8">
-    <title>Название документа</title>
-    <style>
-      #navbar {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-        width: 350px;
-      }
-      #navbar li {
-        border-left: 10px solid #666;
-        border-bottom: 3px solid #666;
-      }
-      #navbar a {
-        background-color: #949494;
-        color: #fff;
-        padding: 10px;
-        text-decoration: none;
-        font-weight: bold;
-        border-left: 15px solid #33ADFF;
-        display: block;
-      }
-    </style>
-			</header>
-				
-  <body>
-   
-    <ul id="navbar">
-      <li><a href="/2P_Practic_test_1">Тест /  /  Вариант 1 </a></li>
-      <li><a href="/2P_Practic_test_2">Тест /  /  Вариант 2 </a></li>
-      <li><a href="/2P_Practic_test_3">Тест /  /  Вариант 3 </a></li>
-      <li><a href="/2P_Practic_test_4">Тест /  /  Вариант 4 </a></li>
-	<li><a href="/2P_Practic_test_5">Тест /  /  Вариант 5 </a></li>
-    </ul>
- 
-  </body>
-</html>
+			<!-- Content -->
+			<article style="max-width: 1000px; margin: 0 auto;">
+				<header>
+					<h2>Тестирование знаний</h2>
+					<p>Контрольно-измерительные материалы для персонализированной оценки успеваемости студентов</p>
+				</header>
 
-						</header>
-					</article>
-		
-			</div>
+				<!-- Методические указания для дипломной комиссии -->
+				<div class="instruction-box">
+					<p style="font-size: 1.05em; line-height: 1.6; color: #334155; margin-bottom: 0;">
+						<i class="fa fa-graduation-cap" style="color: #0284c7; margin-right: 8px;"></i>
+						<strong>Методическое сопровождение:</strong> Контролирующий комплекс практической части включает 5 дифференцированных вариантов автономного тестирования. Каждый вариант содержит индивидуальный пул вопросов для верификации знаний физических терминов, законов динамики Ньютона и кинематических законов Кеплера. Перед стартом учащимся необходимо указать Ф.И.О. и учебную группу для занесения результатов в базу данных.
+					</p>
+				</div>
+
+				<!-- СЕТКА ИНТЕРАКТИВНЫХ КАРТОЧЕК С ТЕСТАМИ -->
+				<div class="test-grid">
+					
+					<!-- Вариант 1 -->
+					<a href="{{ site.baseurl }}/2P_Practic_test_1" class="test-card">
+						<div>
+							<i class="fa fa-file-text-o" style="font-size: 2.5em; color: #47cf73;"></i>
+							<h4>Вариант №1</h4>
+							<p class="test-meta">Оценка базовых знаний. Проверка понятий небесной механики, перигелия, законов Ньютона и формулы ускорения.</p>
+						</div>
+						<span class="test-btn">Открыть тест</span>
+					</a>
+
+					<!-- Вариант 2 -->
+					<a href="{{ site.baseurl }}/2P_Practic_test_2" class="test-card">
+						<div>
+							<i class="fa fa-file-text-o" style="font-size: 2.5em; color: #34a853;"></i>
+							<h4>Вариант №2</h4>
+							<p class="test-meta">Проверка понимания астрономических объектов, афелия, массы, перевода световых лет в парсеки и законов Кеплера.</p>
+						</div>
+						<span class="test-btn">Открыть тест</span>
+					</a>
+
+					<!-- Вариант 3 -->
+					<a href="{{ site.baseurl }}/2P_Practic_test_3" class="test-card">
+						<div>
+							<i class="fa fa-file-text-o" style="font-size: 2.5em; color: #47cf73;"></i>
+							<h4>Вариант №3</h4>
+							<p class="test-meta">Анализ знания большой полуоси орбит, времени, научных трудов Тихо Браге и второго закона Ньютона.</p>
+						</div>
+						<span class="test-btn">Открыть тест</span>
+					</a>
+
+					<!-- Вариант 4 -->
+					<a href="{{ site.baseurl }}/2P_Practic_test_4" class="test-card">
+						<div>
+							<i class="fa fa-file-text-o" style="font-size: 2.5em; color: #34a853;"></i>
+							<h4>Вариант №4</h4>
+							<p class="test-meta">Тестирование по геометрии эллипсов, понятию импульса классической механики, его формулы и единиц измерения СИ.</p>
+						</div>
+						<span class="test-btn">Открыть тест</span>
+					</a>
+
+					<!-- Вариант 5 -->
+					<a href="{{ site.baseurl }}/2P_Practic_test_5" class="test-card">
+						<div>
+							<i class="fa fa-file-text-o" style="font-size: 2.5em; color: #47cf73;"></i>
+							<h4>Вариант №5</h4>
+							<p class="test-meta">Повышенный уровень. Вопросы по перигею/апогею, изменению орбитальных скоростей планет и расчету эксцентриситета Земли.</p>
+						</div>
+						<span class="test-btn">Открыть тест</span>
+					</a>
+
+				</div>
+
+			</article>
 		</div>
-	</section>			
+	</div>
+</section>
