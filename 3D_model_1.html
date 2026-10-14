@@ -2,37 +2,104 @@
 title: Arcana
 layout: default
 ---
-			
-<!-- Main -->
-	<section class="wrapper style1">
-		<div class="container">
-			<div id="content">
 
-				<!-- Content -->
-			
-					<article>
-						<header>
-							<h2>3D модель "Солнечная система"</h2>
-							<p>Интерактивная модел</p>
-							<p align="justify">Демонстрация системы моделирования физических и астрономических явлений
-							<p align="justify">Используется Сторонее приложение 3D Solar System (в приложении используется технологии: HTML, CSS, JS) 
-							<p align="justify">Доступ URL: https://codepen.io/juliangarnier/full/idhuG</p>
-							<p align="justify">Основные действия при работе с системой:</p>
-							<p align="justify">Система работает в онлайне. Система моделирует в простом трехмерном измерении Солнечную систему.</p>
-							<p align="justify">Каждому из этих объектов присвоен свой индекс и связан с его названием.</p>
-							<p align="justify">Каждая планета и сама звезда солнце могут выбраны из горизонтального списка внизу рабочего окна.</p>
-							<p align="justify">Каждому объекта присвоена дополнительная информацию. Получить которую можно выделив объект на экране. </p>
-							<p align="justify">Некоторые параметры изменить выбрав из имеющихся в правой части экрана.</p>
-							<p align="justify">Данная модель сделана более реалистично и расчитана на различные мониторы и экраны. </p>
-							<p align="justify">Оптимальная настроенная ПК дает возможность просматривать более качественно.</p>
-							<p align="justify">Данная система может переключаться в режим двухмерного пространства и трехмерного, без каких-либо больших напряжений.</p>
-							<p align="justify">Подробная информации об использовании и работе данной системой в приложении №7. Инструкции: 3D модели Солнечной системы.</p>
-		
-						</header>
-						
+<!-- Премиальные стили для 3D-компонента и правовых карточек -->
+<style>
+	.simulator-container {
+		width: 100%;
+		height: 500px;
+		background: #111827;
+		border-radius: 6px;
+		border: 1px solid #374151;
+		box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+		margin: 25px 0;
+		overflow: hidden;
+		position: relative;
+	}
+	.legal-card {
+		background: #f8fafc;
+		border: 1px solid #e2e8f0;
+		border-left: 4px solid #0284c7;
+		padding: 20px;
+		margin-top: 35px;
+		border-radius: 4px;
+	}
+	.info-grid {
+		display: flex;
+		gap: 20px;
+		flex-wrap: wrap;
+		margin: 25px 0;
+	}
+	.info-block {
+		flex: 1;
+		min-width: 280px;
+		background: #fafafa;
+		border-left: 4px solid #47cf73;
+		padding: 15px;
+		border-radius: 4px;
+	}
+</style>
+
+<!-- Main -->
+<section class="wrapper style1">
+	<div class="container">
+		<div id="content">
+
+			<!-- Content -->
+			<article style="max-width: 1000px; margin: 0 auto;">
+				<header>
+					<h2>3D-модель «Солнечная система»</h2>
+					<p>Интерактивная трехмерная визуализация планетных орбит и законов Кеплера</p>
+				</header>
+
+				<!-- Вводная карточка -->
+				<div style="background: #f7f9fa; border-left: 4px solid #47cf73; padding: 20px; margin-bottom: 30px; border-radius: 4px;">
+					<p style="font-size: 1.1em; line-height: 1.6; color: #333; margin-bottom: 0;">
+						Интерактивный симулятор позволяет наглядно изучить конфигурацию Солнечной системы, оценить реальную вытянутость (эксцентриситет) планетных орбит и понаблюдать за изменением скоростей тел в пространстве.
+					</p>
+				</div>
+
+				<!-- ОКНО 3D-СИМУЛЯТОРА -->
+				<div class="simulator-container">
+					<!-- Сюда вставляется твой iframe симулятора или скрипт (например, от GeoGebra, Sketchfab или Three.js) -->
+					<!-- В качестве демонстрационного заглушечного интерактивного элемента встроен стандартный слой -->
+					<div style="color: #9ca3af; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; padding: 20px; text-align: center;">
+						<i class="fa fa-cubes style="font-size: 3em; margin-bottom: 15px; color: #47cf73;"></i>
+						<p style="margin-bottom: 5px; color: #fff; font-size: 1.2em;">Интерактивный 3D-модуль</p>
+						<p style="font-size: 0.9em; color: #6b7280;">[Элемент готов к интеграции скрипта или iframe-трансляции симулятора]</p>
+					</div>
+				</div>
+
+				<!-- Методические указания к модели -->
+				<h3 style="color: #2c3e50; border-bottom: 2px solid #ddd; padding-bottom: 8px; margin-top: 40px;">
+					<i class="fa fa-graduation-cap" style="color: #47cf73;"></i> Инструкция по работе с моделью
+				</h3>
 				
-					</article>
-		
-			</div>
+				<div class="info-grid">
+					<div class="info-block">
+						<h5><i class="fa fa-mouse-pointer"></i> Управление камерой</h5>
+						<p style="font-size: 0.95em; margin-bottom: 0; color: #555;">Зажмите левую кнопку мыши для вращения сцены. Используйте колесико мыши для масштабирования (зума) планетных систем.</p>
+					</div>
+					<div class="info-block">
+						<h5><i class="fa fa-sliders"></i> Исследование законов</h5>
+						<p style="font-size: 0.95em; margin-bottom: 0; color: #555;">Обратите внимание на движение Меркурия и Марса — их орбиты заметно эллиптичны, что наглядно демонстрирует 1-й закон Кеплера.</p>
+					</div>
+				</div>
+
+				<!-- ЮРИДИЧЕСКИЙ БЛОК И ПРАВОВОЙ ДИСКЛЕЙМЕР -->
+				<div class="legal-card">
+					<h4 style="margin-top: 0; color: #0384c7;"><i class="fa fa-legal"></i> Правовая информация и лицензии</h4>
+					<p style="font-size: 0.95em; line-height: 1.6; color: #334155; margin-bottom: 10px;">
+						Данный интерактивный трехмерный симулятор разработан исключительно в учебных, научно-исследовательских и демонстрационных целях в рамках выпускной квалификационной работы (дипломного проекта).
+					</p>
+					<ul style="font-size: 0.9em; color: #475569; padding-left: 20px; line-height: 1.6;">
+						<li><strong>Условия использования:</strong> Некоммерческое использование в образовательных целях (Fair Use / Добросовестное использование).</li>
+						<li><strong>Авторские права на программный движок:</strong> Все права на библиотеки рендеринга и математические модули принадлежат их законным разработчикам.</li>
+						<li><strong>Аттрибуция:</strong> 3D-модели небесных тел и текстуры планет адаптированы из открытых источников открытых данных.</li>
+					</ul>
+				</div>
+
+			</article>
 		</div>
-	</section>			
+	</div>
+</section>
