@@ -3,103 +3,165 @@ title: Arcana
 layout: default
 ---
 
+<!-- Фирменные стили для премиального словаря -->
+<style>
+	.alphabet-container {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+		margin: 25px 0 40px 0;
+		padding: 15px;
+		background: #f8f9fa;
+		border-radius: 6px;
+		border: 1px solid #e2e8f0;
+	}
+	.letter-btn {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 38px;
+		height: 38px;
+		background: #ffffff;
+		border: 1px solid #cbd5e1;
+		border-radius: 4px;
+		color: #334155;
+		font-weight: bold;
+		text-decoration: none;
+		transition: all 0.2s ease;
+	}
+	.letter-btn:hover {
+		background: #47cf73;
+		color: #ffffff;
+		border-color: #47cf73;
+		transform: scale(1.05);
+	}
+	.term-card {
+		background: #ffffff;
+		border: 1px solid #e2e8f0;
+		border-left: 4px solid #47cf73;
+		padding: 22px;
+		margin-bottom: 25px;
+		border-radius: 4px;
+		box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+	.term-card:hover {
+		transform: translateY(-3px);
+		box-shadow: 0 6px 12px rgba(0,0,0,0.06);
+	}
+	.source-badge {
+		display: inline-block;
+		font-size: 0.75em;
+		background: #e2e8f0;
+		color: #475569;
+		padding: 2px 8px;
+		border-radius: 12px;
+		margin-left: 10px;
+		font-weight: normal;
+		vertical-align: middle;
+	}
+	.formula-badge {
+		background: #f1f5f9;
+		border: 1px dashed #cbd5e1;
+		padding: 10px 15px;
+		margin: 12px 0;
+		display: inline-block;
+		font-family: "Courier New", Courier, monospace;
+		font-size: 1.1em;
+		color: #0f172a;
+		border-radius: 4px;
+	}
+</style>
+
 <!-- Main -->
 <section class="wrapper style1">
 	<div class="container">
 		<div id="content">
 
 			<!-- Content -->
-			<article>
+			<article style="max-width: 1000px; margin: 0 auto;">
 				<header>
-					<h2>Небесная механика</h2>
-					<p>Фундаментальный раздел астрономии о движении космических тел</p>
+					<h2>Словарь терминов</h2>
+					<p>Библиотека терминов и основных понятий по разделу «Небесная механика» и теме «Законы Кеплера»</p>
 				</header>
 
-				<!-- Главное определение -->
-				<div style="background: #f7f9fa; border-left: 4px solid #34a853; padding: 25px; margin-bottom: 30px; border-radius: 4px;">
-					<p style="font-size: 1.15em; line-height: 1.7; color: #2c3e50; margin-bottom: 0;">
-						<i class="fa fa-bookmark" style="color: #34a853; margin-right: 10px;"></i>
-						<strong>Небесная механика</strong> — это раздел астрономии, изучающий движение небесных тел, космических аппаратов, искусственных и естественных спутников планет под действием сил всемирного тяготения (гравитации).
-					</p>
+				<p>В данном словаре представлены основные понятия и определения по разделу Небесная механика и отдельной темы "Законы Кеплера".</p>
+
+				<!-- Интерактивное меню выбора по буквам -->
+				<div class="alphabet-container">
+					<a href="#letter-A" class="letter-btn">А</a>
+					<a href="#letter-V" class="letter-btn">В</a>
+					<a href="#letter-I" class="letter-btn">И</a>
+					<a href="#letter-M" class="letter-btn">М</a>
+					<a href="#letter-S" class="letter-btn">С</a>
+					<a href="#letter-U" class="letter-btn">У</a>
+					<a href="#letter-E" class="letter-btn">Э</a>
+				</div>
+	<!-- БУКВА А -->
+				<h3 id="letter-A" style="color: #1e293b; border-bottom: 2px solid #47cf73; padding-bottom: 5px; margin-top: 40px;">Буква А</h3>
+				
+				<p style="font-weight: bold; color: #2c3e50; margin-bottom: 20px;">Фундаментальные понятия</p>
+
+				<div class="term-card">
+					<h4>Астрономи́ческая едини́ца <span class="source-badge">МАС</span></h4>
+					<p>Исторически сложившаяся единица измерения расстояний в астрономии, равная среднему расстоянию от Земли до Солнца. Используется как эталон масштаба в Солнечной системе.</p>
+					<div class="formula-badge">1 а. е. ≈ 149 597 870 700 метров (около 150 млн км)</div>
 				</div>
 
-				<!-- Интерактивное содержание страницы -->
-				<div style="background: #fcfcfc; border: 1px solid #e0e0e0; padding: 20px; margin-bottom: 40px; border-radius: 4px; max-width: 400px;">
-					<h4 style="margin-top: 0; margin-bottom: 10px; color: #555;"><i class="fa fa-list-ul"></i> Содержание статьи</h4>
-					<ul style="list-style: none; padding-left: 0; margin-bottom: 0; line-height: 1.8;">
-						<li><a href="#history" style="border-bottom: none;"><i class="fa fa-angle-right"></i> 1. История небесной механики</a></li>
-						<li style="padding-left: 15px;"><a href="#origin" style="border-bottom: none;"><i class="fa fa-angle-right"></i> 1.1. Возникновение теории</a></li>
-						<li style="padding-left: 15px;"><a href="#evolution" style="border-bottom: none;"><i class="fa fa-angle-right"></i> 1.2. Развитие и триумф</a></li>
-						<li><a href="#tasks" style="border-bottom: none;"><i class="fa fa-angle-right"></i> 2. Основные задачи дисциплины</a></li>
+				<div class="term-card">
+					<h4>Афелий <span class="source-badge">Небесная механика</span></h4>
+					<p>Наиболее удалённая от Солнца точка орбиты планеты, а бывает даже иного небесного тела Солнечной системы. Также расстояние от этой точки до Солнца.</p>
+					<div class="formula-badge">Формула расстояния: r<sub>a</sub> = a · (1 + e)</div>
+				</div>
+	<!-- БУКВА В -->
+				<h3 id="letter-V" style="color: #1e293b; border-bottom: 2px solid #47cf73; padding-bottom: 5px; margin-top: 40px;">Буква В</h3>
+				
+				<div class="term-card">
+					<h4>Время <span class="source-badge">Физическая Энциклопедия</span></h4>
+					<p>Одна из основных форм существования материи, проявляющаяся в закономерной смене явлений. Непрерывная величина, априорная характеристика мира, ничем не определяемая.</p>
+					<div class="formula-badge">Обозначение: t | Основная единица в СИ: Секунда (с)</div>
+				</div>
+				<!-- БУКВА И -->
+				<h3 id="letter-I" style="color: #1e293b; border-bottom: 2px solid #47cf73; padding-bottom: 5px; margin-top: 40px;">Буква И</h3>
+				
+				<div class="term-card">
+					<h4>Импульс <span class="source-badge">Классическая механика</span></h4>
+					<p><strong>Векторная физическая величина</strong>, являющаяся мерой <strong>механического движения</strong> тела. В классической механике импульс тела равен произведению массы <i>m</i> этого тела на его скорость <i>v</i>, причём направление импульса строго совпадает с направлением вектора скорости.</p>
+					
+					<p style="margin-bottom: 10px;"><strong>Свойства импульса:</strong></p>
+					<ul style="margin-bottom: 15px; padding-left: 20px; list-style-type: disc;">
+						<li><strong>Аддитивность:</strong> импульс системы тел равен векторной сумме импульсов всех тел, входящих в эту систему.</li>
+						<li><strong>Инвариантность по отношению к повороту системы отсчета:</strong> вектор импульса сохраняет свои свойства при изменении ориентации осей координат.</li>
+						<li><strong>Сохранение:</strong> в замкнутых системах суммарный импульс остается постоянным во времени. Свойства сохранения кинетической энергии, сохранения импульса и второго закона Ньютона достаточно, чтобы вывести математическую формулу импульса.</li>
 					</ul>
-				</div>
-
-				<!-- РАЗДЕЛ 1 -->
-				<h3 id="history" style="color: #2c3e50; border-bottom: 2px solid #ddd; padding-bottom: 8px; margin-top: 40px;">
-					<i class="fa fa-history" style="color: #47cf73;"></i> 1. История небесной механики
-				</h3>
-				<p>
-					Дисциплина зародилась из практической необходимости предсказания положений планет, Луны и Солнца. Современный математический аппарат развивался параллельно с открытием фундаментальных законов физики пространства-времени.
-				</p>
-
-				<!-- Подраздел 1.1 -->
-				<h4 id="origin" style="color: #555; margin-top: 25px;"><i class="fa fa-caret-right"></i> 1.1. Возникновение</h4>
-				<p>
-					Огромное значение для выделения небесной механики в самостоятельную науку имели открытия гениального английского учёного <strong>И. Ньютона</strong>. Используя сформулированные им законы динамики, он доказал, что кинематические <strong>законы Кеплера</strong> строго следуют из динамических принципов, если силы взаимодействия между телами обратно пропорциональны квадратам расстояний между ними. Так был открыт закон всемирного тяготения.
-				</p>
-
-				<!-- Подраздел 1.2 -->
-				<h4 id="evolution" style="color: #555; margin-top: 25px;"><i class="fa fa-caret-right"></i> 1.2. Развитие и триумф</h4>
-				<p>
-					Пользуясь методами Ньютона, математики XVIII–XIX веков создали строгую теорию движения планет. История дисциплины полна грандиозных успехов:
-				</p>
-
-				<!-- Список исторических триумфов -->
-				<ul style="list-style: none; padding-left: 0; margin-top: 20px;">
-					<li style="margin-bottom: 15px; padding-left: 30px; position: relative;">
-						<i class="fa fa-star" style="position: absolute; left: 0; top: 5px; color: #47cf73;"></i>
-						<strong>Комета Галлея (1705 г.):</strong> Э. Галлей доказал периодичность комет, наблюдавшихся в 1531, 1607 и 1682 гг., рассчитав эллиптическую орбиту с периодом ~76 лет. Ее возвращение строго по часам доказало точность расчетов.
-					</li>
-					<li style="margin-bottom: 15px; padding-left: 30px; position: relative;">
-						<i class="fa fa-globe" style="position: absolute; left: 0; top: 5px; color: #47cf73;"></i>
-						<strong>Открытие Нептуна «на кончике пера» (23 сентября 1846 г.):</strong> Аномалии в орбите Урана заставили У. Леверье рассчитать координаты неизвестной планеты. И. Г. Галле обнаружил Нептун точно в указанном месте, что стало абсолютным триумфом теории тяготения.
-					</li>
-					<li style="margin-bottom: 15px; padding-left: 30px; position: relative;">
-						<i class="fa fa-rocket" style="position: absolute; left: 0; top: 5px; color: #47cf73;"></i>
-						<strong>Межпланетные миссии (XX век):</strong> Расчет сложнейших траекторий позволил советским станциям «Вега-1» и «Вега-2» (1984–1986 гг.) сблизиться с кометой Галлея, а американским аппаратам «Вояджер-1» и «Вояджер-2» (с 1977 г.) совершить «Гранд-тур» по планетам-гигантам.
-					</li>
-				</ul>
-
-				<!-- РАЗДЕЛ 2 -->
-				<h3 id="tasks" style="color: #2c3e50; border-bottom: 2px solid #ddd; padding-bottom: 8px; margin-top: 40px;">
-					<i class="fa fa-tasks" style="color: #47cf73;"></i> 2. Задачи небесной механики
-				</h3>
-				<p>
-					В математическом смысле задачи дисциплины исключительно сложны и требуют применения самых мощных суперкомпьютеров для численного моделирования.
-				</p>
-
-				<!-- Блоки задач -->
-				<div style="display: flex; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
-					<div style="flex: 1; min-width: 250px; background: #fafafa; border: 1px solid #e0e0e0; padding: 20px; border-radius: 4px;">
-						<h5 style="margin-top: 0; color: #2c3e50;"><i class="fa fa-calculator"></i> Классический расчет</h5>
-						<p style="font-size: 0.95em; margin-bottom: 0; color: #666;">
-							Моделирование движения естественных тел, спутников планет, звезд в кратных системах и строения целых галактик (включая классическую задачу <i>n</i> тел).
-						</p>
-					</div>
-					<div style="flex: 1; min-width: 250px; background: #fafafa; border: 1px solid #e0e0e0; padding: 20px; border-radius: 4px;">
-						<h5 style="margin-top: 0; color: #2c3e50;"><i class="fa fa-rocket"></i> Космонавтика</h5>
-						<p style="font-size: 0.95em; margin-bottom: 0; color: #666;">
-							Проектирование и расчет траекторий искусственных спутников Земли (ИСЗ) и автоматических межпланетных станций с учетом гравитационных маневров.
-						</p>
-					</div>
-					<div style="flex: 1; min-width: 250px; background: #fafafa; border: 1px solid #e0e0e0; padding: 20px; border-radius: 4px;">
-						<h5 style="margin-top: 0; color: #2c3e50;"><i class="fa fa-shield"></i> Возмущающие факторы</h5>
-						<p style="font-size: 0.95em; margin-bottom: 0; color: #666;">
-							Учет негравитационных сил: давления света, сопротивления верхних слоев атмосферы, приливных сил и поправок Общей теории относительности (ОТО).
-						</p>
+					
+					<div class="formula-badge">
+						<strong>Формула:</strong> p = m · v <br />
+						<strong>Единицы измерения:</strong> СИ: кг · м/с | СГС: г · см/с
 					</div>
 				</div>
+				<!-- БУКВА М -->
+				<h3 id="letter-M" style="color: #1e293b; border-bottom: 2px solid #47cf73; padding-bottom: 5px; margin-top: 40px;">Буква М</h3>
+				
+				<div class="term-card">
+					<h4>Масса <span class="source-badge">ГОСТ 8.417 (СИ)</span></h4>
+					<p>Физическая величина (скалярная), определяющая инерционные и гравитационные свойства тел в ситуациях, когда их скорость намного меньше скорости света. Международный эталон килограмма создан и выглядит в виде объекта — цилиндра, имеющего диаметр и высоту 39,17 мм.</p>
+					<div class="formula-badge">Обозначение: m | Основная единица измерения в СИ: Килограмм (кг)</div>
+				</div>
 
+				
+	<!-- БУКВА С -->
+				<h3 id="letter-S" style="color: #1e293b; border-bottom: 2px solid #47cf73; padding-bottom: 5px; margin-top: 40px;">Буква С</h3>
+				
+				<div class="term-card">
+					<h4>Сила <span class="source-badge">Законы Ньютона</span></h4>
+					<p>Физическая величина, являющаяся мерой воздействия на тело.</p>
+					<div class="formula-badge">Формула: F = m · a</div>
+				</div>
+
+				<!-- БУКВА У и Э -->
+				<h3 id="letter-U" style="color: #1e293b; border-bottom: 2px solid #47cf73; padding-bottom: 5px; margin-top: 40px;">Буквы У, Э</h3>
+				<p>Полные определения и формулы для оставшихся терминов были сокращены в целях оптимизации структуры.</p>
 			</article>
 		</div>
 	</div>
