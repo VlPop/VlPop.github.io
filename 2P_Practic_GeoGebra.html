@@ -2,32 +2,177 @@
 title: Arcana
 layout: default
 ---
-			
-<!-- Main -->
-	<section class="wrapper style1">
-		<div class="container">
-			<div id="content">
 
-				<!-- Content -->
-			
-					<article>
-						<header>
-							
-							<h2>Интерактивные приложения GeoGebra: описание и инструкции.</h2>
-							<p align="justify"> 1.   Зайти на сайт<p/>
-							<a href="/https://www.geogebra.org/download">www.geogebra.org/download</a></li> 
-							<p align="justify"> 2.   Скачать бесплатный дистрибутив  GeoGebra Classic 6 (или поздней версии) для Вашей операционной системы Windows или Mac OS<p/>
-							<p align="justify"> 3.   Установить дистрибутив<p/>
-							<p align="justify"> 4.   В меню программы выбрать загрузить сцену<p/>
-							<p align="justify"> 5.   Из представленных выбрать сцену под названием First Kepler laws – Первый Закон Кеплера<p/>
-							(Данное действие работает при включенном досутпе в сеть “Интеренет”)<p/>
-							<p align="justify"> 6.   Далее следовать методическим инструкциям или План работы преподавателя со сценой. </p>
-						</header>
-						
-						<span class="image featured"><img src="{{ site.baseurl }}/assets/images/banner.jpg" alt="" /></span>
-						
-					</article>
-		
-			</div>
+<!-- Фирменные стили для профессионального оформления интерактивного руководства GeoGebra -->
+<style>
+	.instruction-container {
+		background: #f8fafc;
+		border-left: 4px solid #0284c7;
+		padding: 20px;
+		margin-bottom: 35px;
+		border-radius: 4px;
+		box-shadow: 0 2px 4px rgba(0,0,0,0.01);
+	}
+	.step-list {
+		position: relative;
+		list-style: none;
+		padding-left: 0;
+		margin: 30px 0;
+	}
+	.step-item {
+		position: relative;
+		background: #ffffff;
+		border: 1px solid #e2e8f0;
+		border-left: 4px solid #47cf73;
+		padding: 22px;
+		margin-bottom: 20px;
+		border-radius: 4px;
+		box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+		transition: transform 0.2s ease, box-shadow 0.2s ease;
+		box-sizing: border-box;
+	}
+	.step-item:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+	}
+	.step-number {
+		display: inline-block;
+		background: #47cf73;
+		color: #ffffff;
+		width: 28px;
+		height: 28px;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 28px;
+		font-weight: bold;
+		margin-right: 12px;
+		font-size: 0.9em;
+	}
+	.download-btn {
+		display: inline-flex;
+		align-items: center;
+		gap: 10px;
+		background: #47cf73;
+		color: #ffffff !important;
+		font-weight: bold;
+		padding: 12px 24px;
+		border-radius: 4px;
+		text-decoration: none;
+		margin-top: 15px;
+		transition: all 0.2s ease;
+		box-shadow: 0 4px 6px rgba(71, 207, 115, 0.15);
+	}
+	.download-btn:hover {
+		background: #3bba64;
+		transform: translateY(-1px);
+		box-shadow: 0 6px 12px rgba(71, 207, 115, 0.2);
+	}
+	.download-btn.alt-btn {
+		background: #64748b;
+		box-shadow: 0 4px 6px rgba(100, 116, 139, 0.15);
+		margin-left: 10px;
+	}
+	.download-btn.alt-btn:hover {
+		background: #475569;
+		box-shadow: 0 6px 12px rgba(100, 116, 139, 0.2);
+	}
+	.method-box {
+		background: #fffdf5;
+		border: 1px solid #f1c40f;
+		border-left: 4px solid #f1c40f;
+		padding: 22px;
+		border-radius: 4px;
+		margin-top: 40px;
+		box-sizing: border-box;
+	}
+	.step-text {
+		margin-bottom: 0;
+		font-size: 1.05em;
+		color: #0f172a;
+		line-height: 1.6;
+	}
+</style>
+
+<!-- Main -->
+<section class="wrapper style1">
+	<div class="container">
+		<div id="content">
+
+			<!-- Content -->
+			<article style="max-width: 1000px; margin: 0 auto;">
+				<header>
+					<h2>Интерактивные приложения GeoGebra</h2>
+					<p>Геометрическое моделирование эллиптических орбит и динамическое исследование Первого закона Кеплера</p>
+				</header>
+
+				<!-- Вводный методический блок -->
+				<div class="instruction-container">
+					<p style="font-size: 1.1em; line-height: 1.6; color: #1e293b; margin-bottom: 0;">
+						<i class="fa fa-info-circle" style="color: #0284c7; margin-right: 8px;"></i>
+						<strong>О платформе:</strong> Динамическая математическая среда <strong>GeoGebra</strong> позволяет осуществлять кроссплатформенную визуализацию геометрических параметров конических сечений. С помощью интерактивных моделей студенты могут исследовать анатомию эллипса, фокальные расстояния и эксцентриситеты планетных орбит как непосредственно через веб-интерфейс браузера, так и в рамках десктопного приложения.
+					</p>
+				</div>
+
+				<h3 style="color: #2c3e50; border-bottom: 2px solid #ddd; padding-bottom: 8px; margin-top: 40px;">
+					<i class="fa fa-laptop" style="color: #47cf73;"></i> Варианты работы с интерактивной моделью
+				</h3>
+
+				<!-- ПОШАГОВЫЙ ТАЙМЛАЙН ДЕЙСТВИЙ -->
+				<div class="step-list">
+					
+					<div class="step-item" style="border-left-color: #0284c7;">
+						<p class="step-text">
+							<span class="step-number" style="background: #0284c7;">1</span> <strong>Основной метод (Без установки):</strong> Запустите интерактивную математическую модель виртуальной лаборатории Кеплера напрямую через веб-интерфейс в полноэкранном режиме.
+						</p>
+						<a href="https://geogebra.org" target="_blank" class="download-btn" style="background: #0284c7; box-shadow: 0 4px 6px rgba(2, 132, 199, 0.15);">
+							<i class="fa fa-play-circle"></i> Онлайн-запуск модели в браузере
+						</a>
+					</div>
+
+					<div class="step-item">
+						<p class="step-text">
+							<span class="step-number">2</span> <strong>Альтернативный метод (Локальный):</strong> Если вам требуется автономная оффлайн-работа на стационарном компьютере, перейдите в официальный раздел загрузок дистрибутивов по защищенному протоколу.
+						</p>
+						<a href="https://geogebra.org" target="_blank" class="download-btn">
+							<i class="fa fa-external-link"></i> Открыть загрузки GeoGebra (HTTPS)
+						</a>
+					</div>
+
+					<div class="step-item">
+						<p class="step-text">
+							<span class="step-number">3</span> Скачайте бесплатный дистрибутив <strong>GeoGebra Classic 6</strong> для вашей настольной операционной системы (Windows или macOS) и выполните стандартную установку программного обеспечения.
+						</p>
+					</div>
+
+					<div class="step-item">
+						<p class="step-text">
+							<span class="step-number">4</span> Откройте установленное локальное приложение и в главном функциональном меню выберите команду <strong>«Открыть файл» (Open / Load)</strong>.
+						</p>
+					</div>
+
+					<div class="step-item">
+						<p class="step-text">
+							<span class="step-number">5</span> В строке глобального поиска базы математических ресурсов введите название официальной сцены: <strong>«First Kepler laws — Первый Закон Кеплера»</strong> <i>(для синхронизации с базой требуется активное подключение к сети Интернет)</i>.
+						</p>
+					</div>
+
+					<div class="step-item">
+						<p class="step-text">
+							<span class="step-number">6</span> После успешной инициализации динамического чертежа на рабочей плоскости следуйте прикладным методическим инструкциям ЭОР или утвержденному плану лабораторного занятия.
+						</p>
+					</div>
+
+				</div>
+
+				<!-- МЕТОДИЧЕСКИЙ БЛОК ДЛЯ ПРЕПОДАВАТЕЛЯ -->
+				<div class="method-box">
+					<h4 style="margin-top: 0; color: #b78a00;"><i class="fa fa-graduation-cap"></i> План работы преподавателя со сценой</h4>
+					<p style="font-size: 0.95em; line-height: 1.6; color: #1e293b; margin-bottom: 0;">
+						В рамках демонстрации Первого закона Кеплера рекомендуется запустить сцену и предложить студентам с помощью интерактивных ползунков динамически изменять величину эксцентриситета орбиты космического тела. Обратите внимание учащихся на то, как смещается положение Солнца в одном из фокусов эллипса по мере изменения степени его вытянутости, и при каком значении орбита превращается в идеальную окружность.
+					</p>
+				</div>
+
+			</article>
 		</div>
-	</section>			
+	</div>
+</section>
